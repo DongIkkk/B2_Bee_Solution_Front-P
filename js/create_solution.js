@@ -72,7 +72,10 @@ async function handleUploadimg(){
         },
         method: 'POST',
         body: formdata
-    }).then(window.location.replace('solution_collection.html'))
+    }).then(setTimeout(function(){
+        console.log('5')
+        window.location.href = "solution_detail.html"
+        }, 500))
 }
 
 
