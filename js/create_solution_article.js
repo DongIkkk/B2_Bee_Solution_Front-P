@@ -73,9 +73,11 @@ async function handleUploadimg(){
         },
         method: 'POST',
         body: formdata
-    }).then(window.location.href = 'solution_detail.html')
+    }).then(setTimeout(function(){
+        console.log('5')
+        window.location.href = "solution_detail.html"
+        }, 500))
 }
-
 fetch("./navbar.html").then(response=>{
     return response.text()
 })
